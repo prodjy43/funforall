@@ -12,8 +12,8 @@
     <body>
         <nav class="big hide-on-mobile hide-on-tablet">
             <ul>
-                <li><a href="#!" class="brand"><img src="{{ elixir('images/soleil.png') }}"></a></li>
-                <li><a href="#!">Matériel</a></li>
+                <li><a href="/" class="brand"><img src="{{ elixir('images/soleil.png') }}"></a></li>
+                <li><a href="/materiel">Matériel</a></li>
                 <li><a href="#!">Témoignages</a></li>
                 <li><a href="#!">News</a></li>
                 <li><a href="#!">Galerie</a></li>
@@ -26,8 +26,8 @@
         </div>
         <nav class="small hide-on-desktop">
             <ul>
-                <li><a href="#!">Accueil</a></li>
-                <li><a href="#!">Matériel</a></li>
+                <li><a href="/">Accueil</a></li>
+                <li><a href="/materiel">Matériel</a></li>
                 <li><a href="#!">Témoignages</a></li>
                 <li><a href="#!">News</a></li>
                 <li><a href="#!">Galerie</a></li>

@@ -1,7 +1,7 @@
 @extends('layout')
 @section('content')
     <div class="banner">
-        <a href="#!" class="btn">Nous aidez !</a>
+        <a href="/help" class="btn">Nous aidez !</a>
     </div>
     <div class="grid-container">
         <div class="event section grid-80 suffix-10 prefix-10">

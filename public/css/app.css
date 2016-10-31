@@ -129,6 +129,13 @@ hr{
 	background-color: rgba(52, 152, 219,1.0);
 	color:#EDF2F3;
 }
+.info-list{
+	padding-left: 40px;
+	margin: 20px 0;
+}
+.info-list li{
+	margin: 5px 0;
+}
 footer{
 	min-height: 80px;
 	line-height: 80px;
