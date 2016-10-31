@@ -20,3 +20,9 @@ Route::get('materiel', function () {
 Route::get('help', function () {
 	return view('pages.help', ['title' => 'Aidez-nous']);
 });
+Route::get('contact', function () {
+	return view('pages.contact', ['title' => 'Contactez-nous']);
+});
+Route::get('lien', function () {
+	return view('pages.lien', ['title' => 'Lien - partenaire']);
+});

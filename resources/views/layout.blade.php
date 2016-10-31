@@ -17,8 +17,8 @@
                 <li><a href="#!">Témoignages</a></li>
                 <li><a href="#!">News</a></li>
                 <li><a href="#!">Galerie</a></li>
-                <li><a href="#!">Lien</a></li>
-                <li><a href="#!">Contact</a></li>
+                <li><a href="/lien">Lien</a></li>
+                <li><a href="/contact">Contact</a></li>
             </ul>
         </nav>
         <div class="menu-btn hide-on-desktop">
@@ -31,8 +31,8 @@
                 <li><a href="#!">Témoignages</a></li>
                 <li><a href="#!">News</a></li>
                 <li><a href="#!">Galerie</a></li>
-                <li><a href="#!">Lien</a></li>
-                <li><a href="#!">Contact</a></li>
+                <li><a href="/lien">Lien</a></li>
+                <li><a href="/contact">Contact</a></li>
             </ul>
         </nav>
             @yield('content')
