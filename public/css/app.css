@@ -139,6 +139,41 @@ hr{
 .info-list li{
 	margin: 5px 0;
 }
+.img{
+	height: 150px;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+}
+.img:hover .opacity{
+	opacity: 0.3;
+}
+.img:hover .caption{
+	margin-top: 0;
+}
+.opacity{
+	height: 150px;
+	background-color: rgba(255,255,255,1);
+	opacity: 0;
+	transition: all 0.3s, transform 0.3s;
+}
+.caption{
+	height: 40px;
+	margin-top: -40px;
+	line-height: 40px;
+	text-align: center;
+	color: #EDF2F3;
+	background-color: rgba(0,0,0,.73);
+	transition: all 0.3s, transform 0.3s;
+}
+.gallery{
+	margin:40px 0;
+}
+.photo{
+	margin:10px 0;
+}
 form input, form textarea, button{
 display: inline-block;
 }

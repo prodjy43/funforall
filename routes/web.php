@@ -26,3 +26,6 @@ Route::get('contact', function () {
 Route::get('lien', function () {
 	return view('pages.lien', ['title' => 'Lien - partenaire']);
 });
+Route::get('galerie', function () {
+	return view('pages.galerie', ['title' => 'Lien - partenaire']);
+});

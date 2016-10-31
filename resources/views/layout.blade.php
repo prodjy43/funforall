@@ -16,7 +16,7 @@
                 <li><a href="/materiel">Matériel</a></li>
                 <li><a href="#!">Témoignages</a></li>
                 <li><a href="#!">News</a></li>
-                <li><a href="#!">Galerie</a></li>
+                <li><a href="/galerie">Galerie</a></li>
                 <li><a href="/lien">Lien</a></li>
                 <li><a href="/contact">Contact</a></li>
             </ul>
@@ -30,7 +30,7 @@
                 <li><a href="/materiel">Matériel</a></li>
                 <li><a href="#!">Témoignages</a></li>
                 <li><a href="#!">News</a></li>
-                <li><a href="#!">Galerie</a></li>
+                <li><a href="/galerie">Galerie</a></li>
                 <li><a href="/lien">Lien</a></li>
                 <li><a href="/contact">Contact</a></li>
             </ul>
