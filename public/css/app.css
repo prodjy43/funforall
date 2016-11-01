@@ -318,4 +318,9 @@ iframe{
 	button{
 		width:100%;
 	}
+	.auteur{
+		display: block;
+		float:none;
+		margin-top: 20px;
+	}
 }

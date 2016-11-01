@@ -34,10 +34,6 @@
             <div class="content-sect">
                 <h2>NOA Association Fun For All</h2>
                 <p>Elle a été créée le 19 janvier 2009.<br>Les objectifs de l’Association sont de mettre à disposition de ses membres du matériel adapté pour les loisirs de personnes en situation de polyhandicap ou à mobilité réduite et de leur famille et de rechercher des fonds pour l’acquisition de ce matériel.<br>L’Association a également pour vocation de constituer une plateforme d’échanges pour ses membres.</p>
-                <hr>
-                <div class="footer-sect">
-                    <a href="#!" class="love">J'aime <i class="fa fa-heart-o"></i></a>
-                </div>
             </div>
         </div>
     </div>
