@@ -17,7 +17,7 @@
                 <li><a href="/" class="brand"><img src="{{ elixir('images/soleil.png') }}"></a></li>
                 <li><a href="/materiel">Matériel</a></li>
                 <li><a href="#!">Témoignages</a></li>
-                <li><a href="#!">News</a></li>
+                <li><a href="/actualite">News</a></li>
                 <li><a href="/galerie">Galerie</a></li>
                 <li><a href="/lien">Lien</a></li>
                 <li><a href="/contact">Contact</a></li>
@@ -31,7 +31,7 @@
                 <li><a href="/">Accueil</a></li>
                 <li><a href="/materiel">Matériel</a></li>
                 <li><a href="#!">Témoignages</a></li>
-                <li><a href="#!">News</a></li>
+                <li><a href="/actualite">News</a></li>
                 <li><a href="/galerie">Galerie</a></li>
                 <li><a href="/lien">Lien</a></li>
                 <li><a href="/contact">Contact</a></li>

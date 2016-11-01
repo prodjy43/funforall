@@ -33,3 +33,9 @@ Route::get('galerie/{dossier}', function($dossier){
 	$files = File::allFiles(public_path('images/'.$dossier));
 	return view('pages.slideshow', ['title' => 'Galerie photo '.$dossier, 'files' => $files, 'folder' => $dossier]);
 });
+Route::get('actualite', function () {
+	return view('pages.news', ['title' => 'Actualité']);
+});
+Route::get('actualite/comment/{slug}', function ($slug) {
+	return view('pages.comment', ['title' => $slug]);
+});

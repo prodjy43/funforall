@@ -130,6 +130,12 @@ hr{
 	background-color: rgba(52, 152, 219,1.0);
 	color:#EDF2F3;
 }
+.auteur{
+	float: right;
+}
+.auteur-i{
+	font-style: italic;
+}
 .gallery{
 }
 .partenaire{
