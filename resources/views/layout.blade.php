@@ -3,10 +3,12 @@
     <head>
         <title>funforall - {{ $title }}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="{{ elixir('css/styles.css') }}">
         <link rel="stylesheet" href="{{ elixir('css/app.css') }}">
         <link rel="stylesheet" href="{{ elixir('css/font-awesome.min.css') }}">
         <link rel="stylesheet" href="{{ elixir('css/unsemantic.css') }}">
         <script src="{{ elixir('js/jquery.min.js') }}"></script>
+        <script type="text/javascript" src="{{ elixir('js/jquery.glide.min.js') }}"></script>
         <script src="{{ elixir('js/app.js') }}"></script>
     </head>
     <body>
@@ -37,9 +39,7 @@
         </nav>
             @yield('content')
         <footer>
-            <div class="grid-container">
-                <p>Copyright &copy; funforall.ch made by Ivan&nbsp;Biedermann</p>
-            </div>
+            <p>Copyright &copy; funforall.ch made by Ivan&nbsp;Biedermann</p>
         </footer>
     </body>
 </html>

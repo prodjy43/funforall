@@ -27,5 +27,9 @@ Route::get('lien', function () {
 	return view('pages.lien', ['title' => 'Lien - partenaire']);
 });
 Route::get('galerie', function () {
-	return view('pages.galerie', ['title' => 'Lien - partenaire']);
+	return view('pages.galerie', ['title' => 'Galerie photo']);
+});
+Route::get('galerie/{dossier}', function($dossier){
+	$files = File::allFiles(public_path('images/'.$dossier));
+	return view('pages.slideshow', ['title' => 'Galerie photo '.$dossier, 'files' => $files, 'folder' => $dossier]);
 });
