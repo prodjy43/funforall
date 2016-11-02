@@ -308,6 +308,28 @@ iframe{
 .btn:hover{
 	 box-shadow: 0 5px 12px rgba(0,0,0,.16), 0 5px 12px rgba(0,0,0,.23);
 }
+.admin-list ul li a{
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	padding:0 20px;
+	background-color: #EDF2F3;
+	color: #2E323C;
+	border-bottom: 1px solid rgba(0,0,0,.16);
+	transition: all 0.3s, transform 0.3s;
+}
+.admin-list ul li a:hover{
+	color: #EDF2F3;
+}
+.admin-list ul li a.add:hover{
+	background-color: rgba(39, 174, 96,1.0);
+}
+.admin-list ul li a.edit:hover{
+	background-color: rgba(230, 126, 34,1.0);
+}
+.admin-list ul li a.delete:hover{
+	background-color: rgba(231, 76, 60,1.0);
+}
 @media screen and (max-width:750px){
 	.banner{
 		background-size: 100%;

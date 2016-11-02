@@ -51,5 +51,9 @@ Route::group(['prefix' => 'actualite'], function() {
 Route::group(['prefix' => 'admin'], function() {
     Route::get('', 'AdminController@home')->middleware('auth');
 
-    Route::get('login', 'AdminController@login');
+    Route::get('login', 'AdminController@showLogin');
+
+    Route::post('login', 'AdminController@login');
+
+    Route::get('deconnexion', 'AdminController@deco');
 });
