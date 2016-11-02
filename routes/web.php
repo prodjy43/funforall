@@ -39,4 +39,12 @@ Route::group(['prefix' => 'actualite'], function() {
     Route::get('comment/{slug}', 'blogController@show');
 
     Route::post('comment/{slug}', 'blogController@postCom');
+
+    Route::get('like/{slug}', 'blogController@newsLike');
+
+    Route::get('dislike/{slug}', 'blogController@newsDislike');
+
+    Route::get('comment/like/{id}', 'blogController@commentLike');
+
+    Route::get('comment/dislike/{id}', 'blogController@commentDislike');
 });

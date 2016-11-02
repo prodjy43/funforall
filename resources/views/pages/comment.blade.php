@@ -10,7 +10,17 @@
         <p>{{ $news->content }}</p>
         <hr>
         <div class="footer-sect">
-            <a href="/actualite/like/{{ $news->slug }}" class="love">J'aime <i class="fa fa-heart-o"></i></a>
+        <a  @foreach ($news->newsLikes as $like)
+                @if ($like->visitor == Request::ip())
+                    href="/actualite/dislike/{{ $news->slug }}"
+                @endif
+            @endforeach href="/actualite/like/{{ $news->slug }}" class="love @foreach ($news->newsLikes as $like)
+                @if ($like->visitor == Request::ip())
+                    active
+                @endif
+            @endforeach">@if (count($news->newsLikes) !== 0)
+                {{ count($news->newsLikes) }}
+            @endif J'aime <i class="fa fa-heart-o"></i></a>
             <span class="auteur">Posté par <span class="auteur-i">Ivan Biedermann</span><br><span class="auteur-i">Le {{ $news->created_at }}</span></span>
         </div>
     </div>
@@ -23,7 +33,17 @@
                     <p>{{ $comment->content }}</p>
                     <hr>
                     <div class="footer-sect">
-                        <a href="actualite/comment/like/{{ $comment->id_comment }}" class="love">J'aime <i class="fa fa-heart-o"></i></a>
+                        <a  @foreach ($comment->CommentLikes as $like)
+                            @if ($like->visitor == Request::ip())
+                                href="/actualite/comment/dislike/{{ $comment->id_comment }}"
+                            @endif
+                        @endforeach href="/actualite/comment/like/{{ $comment->id_comment }}" class="love @foreach ($comment->CommentLikes as $like)
+                            @if ($like->visitor == Request::ip())
+                                active
+                            @endif
+                        @endforeach">@if (count($news->CommentLikes) !== 0)
+                            {{ count($news->CommentLikes) }}
+                        @endif J'aime <i class="fa fa-heart-o"></i></a>
                         <span class="auteur">Posté par <span class="auteur-i">{{ $comment->prenom.' '.$comment->nom }}</span><br><span class="auteur-i">Le {{ $comment->created_at }}</span></span>
                     </div>
                 </div>

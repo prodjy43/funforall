@@ -17,4 +17,8 @@ class News extends Authenticatable
     protected $fillable = [
        'title', 'content', 'image', 'nom', 'prenom', 'slug',
     ];
+
+    public function newsLikes(){
+    	return $this->hasMany('App\NewsLike', 'slug_news', 'slug');
+    }
 }

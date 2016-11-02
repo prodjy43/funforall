@@ -5,7 +5,7 @@ namespace App;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class Comment extends Authenticatable
+class CommentLike extends Authenticatable
 {
     use Notifiable;
 
@@ -15,10 +15,6 @@ class Comment extends Authenticatable
      * @var array
      */
     protected $fillable = [
-       'title', 'content', 'nom', 'prenom', 'news_slug',
+       'visitor', 'id_comments',
     ];
-
-    public function commentLikes(){
-    	return $this->hasMany('App\CommentLike', 'id_comments', 'id_comment');
-    }
 }

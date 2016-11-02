@@ -126,6 +126,10 @@ hr{
 	background-color: rgba(231, 76, 60,1.0);
 	color:#EDF2F3;
 }
+.love.active{
+	background-color: rgba(231, 76, 60,1.0);
+	color:#EDF2F3;
+}
 .comment:hover{
 	background-color: rgba(52, 152, 219,1.0);
 	color:#EDF2F3;

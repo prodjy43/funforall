@@ -12,7 +12,17 @@
 	                <p>{{ $post->content }}</p>
 	                <hr>
 	                <div class="footer-sect">
-	                    <a href="/actualite/like/{{ $post->slug }}" class="love">J'aime <i class="fa fa-heart-o"></i></a>
+	                    <a  @foreach ($post->newsLikes as $like)
+	                    	@if ($like->visitor == Request::ip())
+	                    		href="/actualite/dislike/{{ $post->slug }}"
+	                    	@endif
+	                    @endforeach href="/actualite/like/{{ $post->slug }}" class="love @foreach ($post->newsLikes as $like)
+	                    	@if ($like->visitor == Request::ip())
+	                    		active
+	                    	@endif
+	                    @endforeach">@if (count($post->newsLikes) !== 0)
+	                    	{{ count($post->newsLikes) }}
+	                    @endif J'aime <i class="fa fa-heart-o"></i></a>
 	                    <a href="/actualite/comment/{{ $post->slug }}" class="comment">Commentaire <i class="fa fa-comment-o"></i></a>
 	                    <span class="auteur">Posté par <span class="auteur-i">{{ $post->prenom.' '.$post->nom }}</span><br><span class="auteur-i">Le {{ $post->created_at }}</span></span>
 	                </div>
