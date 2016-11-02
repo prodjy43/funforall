@@ -35,14 +35,14 @@
                     <div class="footer-sect">
                         <a  @foreach ($comment->CommentLikes as $like)
                             @if ($like->visitor == Request::ip())
-                                href="/actualite/comment/dislike/{{ $comment->id_comment }}"
+                                href="/actualite/comment/dislike/{{ $comment->id_comment }}/{{ $title }}"
                             @endif
-                        @endforeach href="/actualite/comment/like/{{ $comment->id_comment }}" class="love @foreach ($comment->CommentLikes as $like)
+                        @endforeach href="/actualite/comment/like/{{ $comment->id_comment }}/{{ $title }}" class="love @foreach ($comment->CommentLikes as $like)
                             @if ($like->visitor == Request::ip())
                                 active
                             @endif
-                        @endforeach">@if (count($news->CommentLikes) !== 0)
-                            {{ count($news->CommentLikes) }}
+                        @endforeach">@if (count($comment->CommentLikes) !== 0)
+                            {{ count($comment->CommentLikes) }}
                         @endif J'aime <i class="fa fa-heart-o"></i></a>
                         <span class="auteur">Posté par <span class="auteur-i">{{ $comment->prenom.' '.$comment->nom }}</span><br><span class="auteur-i">Le {{ $comment->created_at }}</span></span>
                     </div>

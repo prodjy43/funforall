@@ -41,16 +41,16 @@ class blogController extends Controller
         return redirect('/actualite');
     }
 
-    public function commentLike(Request $request, $id){
+    public function commentLike(Request $request, $id, $slug){
         $ip = $request->ip();
         $this->likeComment($ip, $id);
-        return redirect('/actualite');
+        return redirect('/actualite/comment/'.$slug);
     }
 
-    public function commentDislike(Request $request, $id){
+    public function commentDislike(Request $request, $id, $slug){
         $ip = $request->ip();
         CommentLike::where('id_comments', $id)->where('visitor', $ip)->delete();
-        return redirect('/actualite');
+        return redirect('/actualite/comment/'.$slug);
     }
 
     protected function create(array $data, $slug){

@@ -44,7 +44,12 @@ Route::group(['prefix' => 'actualite'], function() {
 
     Route::get('dislike/{slug}', 'blogController@newsDislike');
 
-    Route::get('comment/like/{id}', 'blogController@commentLike');
+    Route::get('comment/like/{id}/{slug}', 'blogController@commentLike');
 
-    Route::get('comment/dislike/{id}', 'blogController@commentDislike');
+    Route::get('comment/dislike/{id}/{slug}', 'blogController@commentDislike');
+});
+Route::group(['prefix' => 'admin'], function() {
+    Route::get('', 'AdminController@home')->middleware('auth');
+
+    Route::get('login', 'AdminController@login');
 });
