@@ -57,3 +57,16 @@ Route::group(['prefix' => 'admin'], function() {
 
     Route::get('deconnexion', 'AdminController@deco');
 });
+
+Route::post('contact/send', function(Request $request){
+
+    Illuminate\Support\Facades\Mail::send('emails.contact', ['mail' => $request->all()], function($message){
+        $message->from($request->all()['mail'], $request->all()['prenom'].' '.$request->all()['nom']);
+
+        $message->to('info@funforall.ch');
+    });
+});
+
+Route::get('dev', function(){
+    return view('emails.contact', ['title' => 'Test']);
+});
